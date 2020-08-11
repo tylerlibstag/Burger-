@@ -1,9 +1,10 @@
-  
-<div class="mt-4">
-	<h4>{{burger_name}}</h4>
-
-	<!--Devour me button-->
-	<button class="change-devour btn btn-primary" data-id="{{id}}" data-newdevour="{{devour}}">
-		<img src="/assets/img/devour.png" width=25px height=25px" class="mr-2"> Devour me
+<li class="list">
+	{{burger_name}}
+<div class="button">
+	<button class="change-devour" data-id="{{id}}" data-newdevour="{{devoured}}">
+		{{#if devoured}}Devour!!!{{else}}Order Again{{/if}}
 	</button>
+
+	<button class="delete-burger" data-id="{{this.id}}">DELETE!</button>
 </div>
+</li>

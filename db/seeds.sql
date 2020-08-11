@@ -1,6 +1,6 @@
 USE burgers;
 
-INSERT INTO burger
+INSERT INTO burgers
 (burger_name, devoured)
 VALUES
 ("Blue Cheese Burger", FALSE),
